@@ -1,0 +1,95 @@
+/* universal styles */
+html {
+  box-sizing: border-box;
+}
+*,*:before, *:after {
+  box-sizing: inherit;
+}
+
+div {
+  border: 1px solid black
+}
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.container {
+
+  max-width: 100%;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.sixty-forty-container {
+  display: flex;
+  align-items: center;
+}
+
+.sixty {
+  width: 60%;
+  padding: 32px 24px 32px 24px;
+}
+
+.forty {
+  width: 40%;
+  padding: 16px;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding-left: 24px;
+}
+
+.colmar {
+  color: darkgrey;
+  font-weight: bold;
+}
+
+/* banner section */
+.button {
+  text-align: center;
+  background-color: darkgrey;
+}
+/* information section */
+.info-bite  {
+  display: flex;
+  align-items: center;
+}
+/* courses section */
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course {
+  width: 30%;
+}
+/* thesis section */
+
+/* footer */
