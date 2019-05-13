@@ -80,6 +80,15 @@ header {
   display: flex;
   align-items: center;
 }
+
+.info-bite .image {
+  width: 35%;
+  width: auto;
+  padding: 16px;
+}
+.info-bite .content {
+  width: 65%;
+}
 /* courses section */
 .courses-container {
   display: flex;
