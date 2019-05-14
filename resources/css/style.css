@@ -56,6 +56,9 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 64px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
 }
 
 .logo {
@@ -73,6 +76,9 @@ header {
 /* banner section */
 .banner {
   background-color: silver;
+  position: relative;
+  top: 64px;
+
 }
 .button {
   text-align: center;
@@ -92,9 +98,9 @@ header {
 }
 
 .info-bite .image {
-  width: 35%;
+
   width: auto;
-  padding: 16px;
+  padding: 2%;
 }
 .info-bite .content {
   display: flex;
