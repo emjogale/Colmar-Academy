@@ -71,10 +71,20 @@ header {
 }
 
 /* banner section */
+.banner {
+  background-color: silver;
+}
 .button {
   text-align: center;
-  background-color: darkgrey;
+  color: white;
+  background-color: black;
+  padding: 8px 0 8px 0;
+  margin: 24px;
 }
+
+/*.banner h1, h2 {
+  padding: 24px;
+}*/
 /* information section */
 .info-bite  {
   display: flex;
@@ -87,6 +97,9 @@ header {
   padding: 16px;
 }
 .info-bite .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 65%;
 }
 /* courses section */
