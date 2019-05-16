@@ -10,35 +10,55 @@ div {
   border: 1px solid black
 }
 html {
-  font-family: "Helvetica", sans-serif;
-  font-size: 20px;
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  font-size: 24px;
 }
 
 h1 {
-  font-size: 32px;
+  font-family: "Roboto";
+  font-size: 1.5rem;
   font-weight: bold;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+h3, p{
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.8rem;
 }
 
 .container {
 
-  max-width: 100%;
-  width: 960px;
+  width: 100%;
+  max-height: 100%;*
+  max-width: 960px;
   margin: 0 auto;
 }
 
 .sixty-forty-container {
   display: flex;
   align-items: center;
+
 }
 
 .sixty {
+  height: 100%;
   width: 60%;
   padding: 32px 24px 32px 24px;
 }
 
 .forty {
   width: 40%;
-  padding: 16px;
+  padding: 32px 16px 32px 16px;
 }
 
 .image-container {
@@ -48,6 +68,7 @@ h1 {
 img {
   max-width: 100%;
   max-height: 100%;
+
 }
 
 /* header */
@@ -65,10 +86,13 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  height: 32px;
+  height: 40px;
   padding-left: 24px;
 }
+.logo img {
+/*  height: 4rem;*/
 
+}
 .colmar {
   color: darkgrey;
   font-weight: bold;
@@ -81,7 +105,7 @@ nav {
 
 nav a {
   padding-left: 16px;
-  text-decoration: none;
+
 }
 
 /* banner section */
@@ -91,35 +115,71 @@ nav a {
   top: 64px;
 
 }
+
+.banner .text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  padding-top: 32px;
+
+}
 .button {
+
   text-align: center;
   color: white;
   background-color: black;
   padding: 8px 0 8px 0;
-  margin: 24px;
+  margin: 24px 0 24px 0;
+  width: 80%;
 }
 
-/*.banner h1, h2 {
-  padding: 24px;
-}*/
+.banner h1 {
+  font-size: 2rem;
+  padding-bottom: 24px;
+}
 /* information section */
-.info-bite  {
+.info {
+  margin-top: 64px;
+
+}
+.info .text-content h1 {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.info .text-content h3 {
+  margin-top: 34px;
+}
+
+.info-bite, .thesis-example{
   display: flex;
   align-items: center;
+  /*padding-top: 16px;*/
+  margin-top: 32px;
 }
 
-.info-bite .image {
-
-  width: auto;
-  padding: 2%;
+.info-bite .image, .thesis-example .image {
+  width: 35%;
+  margin-right: 16px;
+  min-width: 90px;
 }
 .info-bite .content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   width: 65%;
 }
+
+.info-bite h3 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
 /* courses section */
+.courses {
+    background-color: silver;
+}
+.courses h1, .theses h1 {
+  text-align: center;
+  padding: 32px 0 32px 0;
+}
 .courses-container {
   display: flex;
   flex-wrap: wrap;
@@ -128,7 +188,23 @@ nav a {
 
 .course {
   width: 30%;
+  background-color: white;
+  margin: 0px 16px 32px 16px;
 }
-/* thesis section */
 
+.course .text-content {
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+
+.course h2, .course h3, .course p{
+  padding: 8px 8px 8px 16px;
+
+}
+
+/* thesis section */
+.theses .forty {
+  width: 35%;
+  margin-right: 16px;
+}
 /* footer */
