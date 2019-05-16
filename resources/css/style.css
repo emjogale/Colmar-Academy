@@ -59,6 +59,7 @@ header {
   position: fixed;
   background-color: white;
   width: 100%;
+  z-index: 1;
 }
 
 .logo {
@@ -71,6 +72,16 @@ header {
 .colmar {
   color: darkgrey;
   font-weight: bold;
+}
+
+nav {
+  display: inline-block;
+  padding-right: 24px;
+}
+
+nav a {
+  padding-left: 16px;
+  text-decoration: none;
 }
 
 /* banner section */
