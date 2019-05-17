@@ -28,7 +28,7 @@ h2 {
 
 h3, p{
   font-size: 0.8rem;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 h4 {
@@ -37,13 +37,14 @@ h4 {
 
 a {
   text-decoration: none;
+  font-family: "Roboto";
   font-size: 0.8rem;
 }
 
 .container {
 
   width: 100%;
-  max-height: 100%;*
+  max-height: 100%;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -51,7 +52,6 @@ a {
 .sixty-forty-container {
   display: flex;
   align-items: center;
-
 }
 
 .sixty {
@@ -62,7 +62,8 @@ a {
 
 .forty {
   width: 40%;
-  padding: 32px 16px 32px 16px;
+  height: 100%;
+  padding-left: 16px;
 }
 
 .image-container {
@@ -156,14 +157,14 @@ nav a {
   margin-top: 34px;
 }
 
-.info-bite, .thesis-example{
+.info-bite {
   display: flex;
   align-items: center;
   /*padding-top: 16px;*/
   margin-top: 32px;
 }
 
-.info-bite .image, .thesis-example .image {
+.info-bite .image {
   width: 35%;
   margin-right: 16px;
   min-width: 90px;
@@ -207,14 +208,44 @@ nav a {
 }
 
 /* thesis section */
-.theses .forty {
-  width: 35%;
-  margin-right: 16px;
+video {
+  width: 100%;
+  height: auto;
 }
+/*.theses .forty {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}*/
 
 .theses .text-content h2 {
+
   padding-top: 24px;
   padding-bottom: 8px;
+}
+
+/*.forty .thesis-example {
+  align-items: flex-start;
+}*/
+
+.thesis-example {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+
+}
+
+.thesis-example .image {
+  height: auto;
+  width: 35%;
+  min-width: 90px;
+}
+
+.thesis-example .text-content {
+  width: 65%;
+  margin-left: 16px;
+  padding-right: 32px;
+
 }
 /* footer */
 footer {
