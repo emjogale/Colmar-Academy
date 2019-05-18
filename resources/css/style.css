@@ -6,22 +6,22 @@ html {
   box-sizing: inherit;
 }
 
-div {
+/*div {
   border: 1px solid black
-}
+}*/
 html {
-  font-family: "Montserrat", "Helvetica", sans-serif;
-  font-size: 24px;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  font-size: 28px;
 }
 
 h1 {
-  font-family: "Roboto";
+  font-family: "Roboto Condensed";
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 h2 {
-  font-family: "Roboto";
+  font-family: "Roboto Condensed";
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -29,35 +29,41 @@ h2 {
 h3, p{
   font-size: 0.8rem;
   line-height: 1.4;
+  color: rgb(40,40,40);
 }
 
 h4 {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 }
 
 a {
+
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: "Roboto Condensed";
   font-size: 0.8rem;
+  color: rgb(40,40,40);
+}
+
+a:hover {
+  border-top: solid 1px red;
+  border-bottom: solid 1px red;
+
 }
 
 .container {
-
   width: 100%;
-  max-height: 100%;
   max-width: 960px;
-  margin: 0 auto;
 }
 
 .sixty-forty-container {
   display: flex;
-  align-items: center;
+  padding: 32px 24px 32px 24px;
 }
 
 .sixty {
   height: 100%;
   width: 60%;
-  padding: 32px 24px 32px 24px;
+  margin-right: 24px;
 }
 
 .forty {
@@ -95,37 +101,39 @@ header {
   padding-left: 24px;
 }
 .logo img {
-/*  height: 4rem;*/
 
 }
-.colmar {
+.academy {
   color: darkgrey;
   font-weight: bold;
 }
 
 nav {
   display: inline-block;
-  padding-right: 24px;
+
 }
 
 nav a {
-  padding-left: 16px;
-
+padding-left: 12px;
+padding-right: 12px;
 }
 
 /* banner section */
 .banner {
-  background-color: silver;
+  background-color: WhiteSmoke;
   position: relative;
   top: 64px;
+}
 
+.banner .sixty-forty-container {
+  align-items: center;
 }
 
 .banner .text-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 80%;
+  width: 70%;
   padding-top: 32px;
 
 }
@@ -133,10 +141,10 @@ nav a {
 
   text-align: center;
   color: white;
-  background-color: black;
+  background-color: rgb(40,40,40);
   padding: 8px 0 8px 0;
   margin: 24px 0 24px 0;
-  width: 80%;
+  width: 100%;
 }
 
 .banner h1 {
@@ -144,9 +152,9 @@ nav a {
   padding-bottom: 24px;
 }
 /* information section */
-.info {
-  margin-top: 24px;
 
+.info .sixty {
+  margin-bottom: 32px;
 }
 .info .text-content h1 {
   margin-top: 32px;
@@ -160,7 +168,7 @@ nav a {
 .info-bite {
   display: flex;
   align-items: center;
-  /*padding-top: 16px;*/
+
   margin-top: 32px;
 }
 
@@ -179,16 +187,18 @@ nav a {
 }
 /* courses section */
 .courses {
-    background-color: silver;
+  background-color: WhiteSmoke;
 }
 .courses h1, .theses h1 {
   text-align: center;
   padding: 32px 0 32px 0;
 }
+
 .courses-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 72px 32px 72px;
 }
 
 .course {
@@ -202,21 +212,23 @@ nav a {
   padding-bottom: 24px;
 }
 
-.course h2, .course h3, .course p{
+.course h2, .course h3, .course p {
   padding: 8px 8px 8px 16px;
 
 }
 
 /* thesis section */
+
 video {
   width: 100%;
   height: auto;
 }
-/*.theses .forty {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}*/
+
+.theses .sixty-forty-container {
+  align-items: flex-start;
+}
+
+
 
 .theses .text-content h2 {
 
@@ -224,14 +236,11 @@ video {
   padding-bottom: 8px;
 }
 
-/*.forty .thesis-example {
-  align-items: flex-start;
-}*/
 
 .thesis-example {
   display: flex;
   align-items: center;
-  padding-bottom: 16px;
+  padding-bottom: 32px;
 
 }
 
@@ -253,9 +262,9 @@ footer {
   align-items: center;
   justify-content: space-between;
   height: 64px;
+
 }
 
 footer a {
-
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 }
