@@ -394,7 +394,7 @@ h1, h2 {
 }
 /*mobile-thesis section*/
 .theses h1 {
-  margin-top: 32px;
+  margin-top: 2rem;
 }
 .video-container .text-content, .theses .forty {
   display: none;
@@ -406,4 +406,5 @@ h1, h2 {
 footer h4 {
   font-size: 1rem;
 }
+
 }
