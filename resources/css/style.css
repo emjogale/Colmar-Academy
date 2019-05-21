@@ -313,6 +313,10 @@ footer h4, footer a {
 
 /* mobile styles this was the width things broke but maybe it needs more rules for 470px-804px */
 @media only screen and (max-width: 804px) {
+
+h1, h2 {
+  font-weight: 500;
+}
 .sixty-forty-container {
   flex-direction: column;
   padding: 0px;
@@ -368,21 +372,17 @@ footer h4, footer a {
 .info-bite .content {
   width: 100%;
   padding-left: 32px;
-  padding-top:
-/*  padding: 32px;*/
+  margin-bottom: 16px;
 }
 
 .info-bite .content h3 {
   font-size: 1.2rem;
 }
 
-
-
 /*mobile course section */
 .courses-container {
   display: none;
 }
-
 
 .mobile-courses  {
   display: flex;
@@ -407,6 +407,9 @@ footer h4, footer a {
   transform: translateY(4px);
 }
 /*mobile-thesis section*/
+.theses h1 {
+  margin-top: 32px;
+}
 .video-container .text-content, .theses .forty {
   display: none;
 }
