@@ -54,16 +54,18 @@ a:hover {
 }
 
 .sixty-forty-container {
+  height: auto;
   display: flex;
-  padding: 32px 24px 32px 24px;
+/*  padding: 32px 24px 32px 24px;*/
   align-content: flex-start;
-  flex-shrink: 1;
+
 }
 
 .sixty {
-  height: 100%;
+  height:100%;
   width: 60%;
   margin-right: 24px;
+  padding-left: 32px;
 }
 
 .forty {
@@ -81,9 +83,14 @@ img {
   max-height: 100%;
 }
 
-/* images which are links */
+
+/* images and sections which are links (not linked to anything yet!) */
 .info-bite .image:hover, .course .image:hover, .thesis-example .image:hover {
     opacity: 0.7;
+  }
+
+  .info-bite:hover, .course:hover, .thesis-example:hover {
+    background-color: lightgrey;
   }
 
 /* header */
@@ -106,17 +113,9 @@ header {
   font-size: 2rem;
 }
 
-.logo img {
-
-}
 .academy {
   color: darkgrey;
   font-weight: bold;
-}
-
-nav {
-  display: inline-block;
-
 }
 
 nav a {
@@ -130,7 +129,7 @@ padding-right: 12px;
 
 /* banner section */
 .banner {
-  background-color: WhiteSmoke;
+  background-color: rgb(224,224,224);
   position: relative;
   top: 64px;
 }
@@ -201,6 +200,10 @@ padding-right: 12px;
   min-width: 90px;
 }
 
+.info-bite .mobile-image {
+  display: none;
+}
+
 .info-bite .content {
   width: 65%;
 }
@@ -211,7 +214,7 @@ padding-right: 12px;
 }
 /* courses section */
 .courses {
-  background-color: WhiteSmoke;
+  background-color: rgb(232,232,232);
 }
 .courses h1, .theses h1 {
   text-align: center;
@@ -283,7 +286,7 @@ video {
   align-items: center;
   justify-content: space-between;
   height: 64px;
-  padding-left: 24px;
+  padding-left: 32px;
 }
 
 footer h4, footer a {
@@ -302,10 +305,7 @@ footer h4, footer a {
   padding: 0px;
 }
 
-.info .sixty {
-  display: none;
-}
-.logo, nav {
+.logo, nav, .info .sixty {
     display: none;
   }
 
@@ -338,24 +338,27 @@ footer h4, footer a {
   }
 
 .info-bite .image {
-  width: auto;
-  height: 300px;
+  display: none;
 }
 
-.image img {
+.info-bite .mobile-image {
+  display: block;
   width: 100%;
-  padding-bottom: 16px;
-
+  padding: 16px;
 }
 
 .info-bite .content {
   width: 100%;
-  padding: 32px;
+  padding-left: 32px;
+  padding-top:
+/*  padding: 32px;*/
 }
 
 .info-bite .content h3 {
   font-size: 1.2rem;
 }
+
+
 
 /*mobile course section */
 .courses-container {
